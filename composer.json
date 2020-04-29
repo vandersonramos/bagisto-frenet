@@ -1,0 +1,29 @@
+{
+    "name": "vandersonramos/bagisto-frenet",
+    "description": "Metodo de entrega utilizando o webservice da Frenet",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vanderson Ramos",
+            "email": "ramos.vandersoninfor@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VandersonRamos\\Frenet\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VandersonRamos\\Frenet\\Providers\\FrenetServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "^1.17",
+        "frenet/frenet-php": "^1.1"
+    }
+}
